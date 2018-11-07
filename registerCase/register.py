@@ -1,4 +1,3 @@
-from selenium import webdriver
 from webDriver import driver
 class register():
     def test_admin_register(self,nickname,email,password):

@@ -8,7 +8,7 @@ from registerCase import register
 class all_case(unittest.TestCase):
     # case_dir = r"F:\PythonTest\register.py"
     def setUp(self,nickname,email,password):
-        self.register = register.test_admin_register(nickname,email,password)
+        self.register = register.test_admin_register(self,nickname,email,password)
     # 名字要规范，一般变量使用下划线xxx_xxx
     test_case = unittest.TestSuite()
     discover = unittest.defaultTestLoader.discover(test_case,pattern='test*.py',top_level_dir=None)

@@ -1,6 +1,10 @@
 import unittest
 from SecondWeekTest import test1
-def all_case():
+'''
+使用继承unittest的方式进行测试套件的开发
+'''
+
+class all_case(unittest.TestCase):
     case_dir = r"F:\PythonTest\register.py"
     testcase = unittest.TestSuite()
     discover = unittest.defaultTestLoader.discover(case_dir,pattern='test*.py',top_level_dir=None)

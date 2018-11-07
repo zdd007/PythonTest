@@ -6,12 +6,13 @@ from SecondWeekTest import test1
 
 class all_case(unittest.TestCase):
     case_dir = r"F:\PythonTest\register.py"
-    testcase = unittest.TestSuite()
+    # 名字要规范，一般变量使用下划线xxx_xxx
+    test_case = unittest.TestSuite()
     discover = unittest.defaultTestLoader.discover(case_dir,pattern='test*.py',top_level_dir=None)
     for test_suit in discover:
         for test_case in test_suit:
-            testcase.addTest(test_case)
-            print(testcase)
+            test_case.addTest(test_case)
+            print(test_case)
 if __name__ == "__main__":
     #返回实例
     runner = unittest.TextTestRunner()

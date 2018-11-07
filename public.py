@@ -1,5 +1,5 @@
 from selenium import webdriver
-from driver import driver
+from webDriver import driver
 from time import sleep
 class LoginTest():
 
@@ -7,7 +7,7 @@ class LoginTest():
         sleep(2)
         email_element = driver.find_element_by_xpath("//form[1]//input[@type='email']")
         email_element.clear()
-        email_element.send_keys(email)#这样是不是更直观？
+        email_element.send_keys(email)
         sleep(2)
         password_element = driver.find_element_by_xpath("//form[1]//input[@type='password']")
         password_element.clear()

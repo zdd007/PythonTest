@@ -1,10 +1,11 @@
-from registerCase.register import register
+from registerCase.Register import register
 from webDriver import driver
+
 class test1():
 
     def test1(self):
         url = "https://rd.bosma.cn/uc/#/welcome"
-        url = driver.get(url)#知道了吧
+        url = driver.get(url)
         user_file = open('registerUser.txt','r')
         line = user_file.readline()
         nickname = line.split(',')[0]

@@ -4,3 +4,4 @@ class driver():
         driver = webdriver.Firefox()
         return driver
 driver = driver().get_driver()
+

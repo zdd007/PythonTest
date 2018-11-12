@@ -13,7 +13,9 @@ class run_all_case():
         )
         for test_case in discover:
             TestSuite.addTests(test_case)
+            print(test_case)
         return TestSuite
+
 if __name__ == '__main__':
     # 这个不是单元测试的runner器，这个但方法return的是一个testsiute,需要加入runner才可以，
     run_all_case = run_all_case()

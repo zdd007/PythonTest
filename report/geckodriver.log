@@ -1,0 +1,16 @@
+1541594217296	geckodriver	INFO	geckodriver 0.19.1
+1541594217310	geckodriver	INFO	Listening on 127.0.0.1:58744
+1541594219349	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\zdd007\\AppData\\Local\\Temp\\rust_mozprofile.c1AsBnFST4E6"
+1541594220348	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///D:/Program%20Files/Mozilla%20Firefox/omni.ja!/components/addonManager.js:65
+1541594221459	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\zdd007\AppData\Local\openvr\openvrpaths.vrpath
+[Child 20088] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 20088] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1541594225788	Marionette	INFO	Listening on port 58750
+1541594226691	Marionette	WARN	TLS certificate errors will be ignored for this session
+1541594226737	Marionette	DEBUG	Register listener.js for window 4294967297
+1541594226819	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1541594229765	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1541594229765	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1541594244454	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://rd.bosma.cn/uc/#/welcome"
+1541594247078	Marionette	DEBUG	Received DOM event "pageshow" for "https://rd.bosma.cn/uc/#/welcome"

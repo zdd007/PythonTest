@@ -1,4 +1,6 @@
 import unittest
+import HTMLTestRunner
+import os
 
 
 class run_all_case():
@@ -17,6 +19,8 @@ class run_all_case():
         return TestSuite
 
 if __name__ == '__main__':
+    report_path = "F:\\PythonTest\\report\\result.html"
+    fp = open(report_path,  "wb")
     # 这个不是单元测试的runner器，这个但方法return的是一个testsiute,需要加入runner才可以，
     run_all_case = run_all_case()
     # 加上单元测试的runner器

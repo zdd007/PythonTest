@@ -1,4 +1,4 @@
-from registerCase.register import register
+from testcase import testRegister
 from webDriver import driver
 class test1():
 
@@ -13,7 +13,7 @@ class test1():
         print(email)
         print(password)
         #LoginTest().admin_login(email,password)
-        register().test_admin_register(nickname,email,password)
+        testRegister().test_admin_register(nickname, email, password)
 # if __name__ == '__main__':
 #     test = test1()
 #     test.test1()

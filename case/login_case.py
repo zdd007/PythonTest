@@ -33,6 +33,7 @@ class LoginCase(unittest.TestCase):
     def tearDown(self):
         time.sleep(2)
 
+
     @classmethod
     def tearDownClass(cls):
         cls.driver.close()

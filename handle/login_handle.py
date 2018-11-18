@@ -24,14 +24,14 @@ class LoginHandle():
         input your emial.
         :return:
         '''
-        self.login_page.get_email_element().sendKey(email)
+        self.login_page.get_email_element().send_keys(email)
 
     def send_password(self, password):
         '''
         input your password.
         :return:
         '''
-        self.login_page.get_password_element().sendKey(password)
+        self.login_page.get_password_element().send_keys(password)
 
     def click_signin(self):
         '''

@@ -20,7 +20,7 @@ class LoginPage():
 
     # 获取邮箱
     def get_email_element(self):
-        return self.fd.find_element("email")
+        return self.fd.get_element("email")
 
     # 获取密码
     def get_password_element(self):

@@ -21,6 +21,10 @@ class LoginPage():
     # 获取邮箱
     def get_email_element(self):
         return self.fd.find_element("email")
+
     # 获取密码
     def get_password_element(self):
         return self.fd.get_element("password")
+
+    def get_signin_element(self):
+        return self.fd.get_element('signin')

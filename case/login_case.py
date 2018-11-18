@@ -22,7 +22,8 @@ class LoginCase(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.driver = webdriver.Firefox()
+        cls.driver = webdriver.Chrome()
+        time.sleep(5)
         cls.driver.get('https://rd.bosma.cn/uc/#/welcome')
         cls.driver.maximize_window()
 
@@ -45,5 +46,5 @@ if __name__ == '__main__':
     f = open(file_path, 'wb')
     suite = unittest.TestSuite()
     suite.addTest(LoginCase('test_login'))
-    runner = HTMLTestRunner.HTMLTestRunner(stream=f,title="This is first123 report",description=u"这个是我们第一次测试报告",verbosity=2)
+    runner = HTMLTestRunner.HTMLTestRunner(stream=f,title="This is bosma report",description=u"这个是我们第一次测试报告",verbosity=2)
     runner.run(suite)

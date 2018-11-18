@@ -20,6 +20,7 @@ class LoginBusiness():
     def login(self, emial, password):
         self.login_h.send_emial(emial)
         self.login_h.send_password(password)
+        self.login_h.click_signin()
         return True
 
 

@@ -33,5 +33,12 @@ class LoginHandle():
         '''
         self.login_page.get_password_element().sendKey(password)
 
+    def click_signin(self):
+        '''
+        click signin button
+        :return:
+        '''
+        self.login_page.get_signin_element().click()
+
 
 

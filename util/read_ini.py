@@ -34,3 +34,4 @@ class ReadIni():
 #    read_init = ReadIni()
 #    print(read_init.get_value('email'))
 
+

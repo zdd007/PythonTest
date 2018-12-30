@@ -1,5 +1,6 @@
 #!/usr/bin/python
 #coding:utf-8
+from util.read_ini import ReadIni
 
 """
 @author: 留仙洞
@@ -8,7 +9,6 @@
 @file: find_element.py
 @time: 2018/11/16 23:55
 """
-from util.read_ini import ReadIni
 
 
 class FindElement():
@@ -16,9 +16,11 @@ class FindElement():
     查找元素
     '''
     def __init__(self,driver):
+        # 声明driver，下面的方法中会用到
         self.driver = driver
         # get_user_log = UserLog()
         # self.logger = get_user_log.get_log()
+
     def get_element(self,key):
         # 从ini文件中获取元素
         read_ini = ReadIni()

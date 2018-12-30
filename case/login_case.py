@@ -10,6 +10,7 @@
 """
 import os
 import sys
+# 引入本地文件
 sys.path.append('F:\myworkplace\PythonTest')
 from business.login_business import LoginBusiness
 from selenium import webdriver
@@ -37,6 +38,8 @@ class LoginCase(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         cls.driver.close()
+        
+
 
     def test_login(self):
         self.login.login('1451953028@qq.com','zdd123456')

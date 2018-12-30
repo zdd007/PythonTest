@@ -10,7 +10,8 @@
 """
 from page.login_page import LoginPage
 
-class LoginHandle():
+
+class LoginHandle:
 
     '''
     处理登陆的操作：输入email、密码的几种情况

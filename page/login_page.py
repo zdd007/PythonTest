@@ -13,7 +13,8 @@ from base.find_element import FindElement
 
 class LoginPage():
     '''
-    页面元素读取
+    页面元素读取，页面中每一个元素都可以看做是一个对象，都可以通过selenium来获取的。数据来源于配置文件中的
+    数值
     '''
     def __init__(self,driver):
         self.fd = FindElement(driver)
